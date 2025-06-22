@@ -1,0 +1,12 @@
+{
+  "name": "commonTypes",
+  "version": "1.0.0",
+  "keywords": ["esp32", "message", "types"],
+  "description": "Shared data structures for packet formats and global types",
+  "authors": [
+    {
+      "name": "Peter K Green",
+      "email": "pkg40@yahoo.com"
+    }
+  ]
+}

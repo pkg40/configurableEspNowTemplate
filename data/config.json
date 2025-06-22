@@ -1,0 +1,98 @@
+{
+  "auth.format": {
+    "_user": "string",
+    "_password.format": "password"
+  },
+    "net.format": {
+      "use": "checkbox",
+      "active": "checkbox",
+      "channel": "integer",
+      "ssid": "string",
+      "password.format": "password"
+    },
+    "STA.format": {
+      "use": "checkbox",
+      "active": "checkbox",
+      "channel": "integer.readonly",
+      "ssid": "string",
+      "password.format": "password"
+    },
+    "espnow": {
+      "format.use": "espnow.format",
+      "use": "true",
+      "active": "checkbox",
+      "channel": "1",
+      "devicemac": "AA:BB:CC:DD:EE:FF",
+      "remotemac": "FF:EE:DD:CC:BB:AA",
+      "broadcast": "true",
+      "sharedkey" : "mytoon42273211"
+},
+    "espnow.format": {
+      "use":"checkbox",
+      "broadcast": "checkbox",
+      "user": "string",
+      "channel" : "integer",
+      "devicemac" : "macaddress",
+      "remotemac" : "macaddress"
+    },
+    "flag.format": {
+        "wifistart" : "checkbox",
+        "webstart" : "checkbox",
+        "rebootflag" : "checkbox",
+        "wificonnected" : "checkbox"
+    },
+    "mqtt.format": {
+        "use": "checkbox",
+      "user": "string",
+      "topic": "string",
+      "serverIP": "ipaddress",
+      "serverPort": "integer",
+      "password.format": "password"
+    },
+  "wifiAP": {
+    "format.use": "net.format",
+    "use": "true",
+    "channel":"1",
+    "ip": "192.168.4.1",
+    "port": "80",
+    "name": "RudeAP",
+    "ssid": "espNowAP",
+    "password": "espNowAP"
+  },
+  "wifiSTA": {
+    "format.use": "STA.format",
+    "use": "true",
+    "ip": "",
+    "channel": "1",
+    "port": "",
+    "name": "RudeSTA",
+    "ssid": "greenhouse",
+    "password": "mytoonis42273211"
+  },
+  "mqtt": {
+    "format.use": "mqtt.format",
+    "use": "true",
+    "ip": "10.0.0.88",
+    "port": "1883",
+    "topic": "rudename"
+  },
+  "_auth": {
+    "format.use" : "auth.format",
+    "_user": "admin",
+    "_password": "admin"
+  },
+    "security.format": {
+      "encrypt":"checkbox",
+      "secret": "string",
+      "lmk" : "String"
+    },
+  "security": {
+    "format.use": "security.format",
+    "encrypt": "true",
+    "secret": "42273211",
+    "lmk": "DEADBEEFDEADBEEFDEADBEEFDEADBEEF"
+  },
+  "updates": {
+    "topic": "system/online"
+  }
+}

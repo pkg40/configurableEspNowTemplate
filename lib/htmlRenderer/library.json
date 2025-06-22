@@ -1,0 +1,19 @@
+{
+    "name": "espNowWiFi",
+    "version": "1.0.0",
+    "description": "A lightweight ESP-NOW & WiFi library for ESP32/ESP8266.",
+    "keywords": ["wifi", "esp-now", "networking", "webserver"],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/pkg40/espNowWiFi"
+    },
+    "authors": [
+        {
+            "name": "Peter K Green",
+            "email": "pkg40@yahoo.com"
+        }
+    ],
+    "frameworks": ["arduino"],
+    "platforms": ["espressif32", "espressif8266"],
+    "examples": ["examples/BasicUsage", "examples/ConfigTest"]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "globalConstants",
+  "version": "1.0.0",
+  "keywords": ["protocol", "constants", "enums"],
+  "description": "Shared command codes and constants for messaging, pairing, and system coordination.",
+  "authors": [
+    {
+      "name": "Peter K Green",
+      "email": "pkg40@yahoo.com"
+    }
+  ]
+}
